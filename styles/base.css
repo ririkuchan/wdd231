@@ -1,0 +1,130 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+header span {
+  font-weight: bold;
+}
+
+nav {
+  background-color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+main h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about, .photo {
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+.about h2, .photo h2 {
+  background-color: #333;
+  color: white;
+  margin: -1rem -1rem 1rem;
+  padding: 0.5rem;
+}
+
+.courses {
+  background-color: #eee;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.courses h2 {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #aaa;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.course-list .course {
+  background-color: #bbb;
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer .social-icons img {
+  width: 30px;
+  margin: 0 0.5rem;
+}
