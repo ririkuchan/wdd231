@@ -1,9 +1,7 @@
 const courses = [
   { code: "WDD 130", name: "Web Fundamentals", type: "WDD", completed: true },
   { code: "WDD 131", name: "Dynamic Web Fundamentals", type: "WDD", completed: true },
-  { code: "WDD 231", name: "Frontend Development I", type: "WDD", completed: false },
-  { code: "CSE 111", name: "Programming with Functions", type: "CSE", completed: true },
-  { code: "CSE 121b", name: "JavaScript Language", type: "CSE", completed: false }
+  { code: "WDD 231", name: "Frontend Development I", type: "WDD", completed: false }
 ];
 
 function displayCourses(filter = "All") {

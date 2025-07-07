@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+  .about-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; /* 高さを揃える */
+    gap: 1rem;
+  }
+
+  .about-photo .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 1rem;
+  }
+
+  .about-photo .card h2 {
+    background-color: #333;
+    color: white;
+    margin: -1rem -1rem 1rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .about-photo .card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+    align-self: center;
+  }
+}
