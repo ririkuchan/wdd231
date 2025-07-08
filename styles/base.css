@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
 
 
 /* Base styles */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald','Bebas Neue', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
