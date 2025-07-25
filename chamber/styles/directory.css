@@ -30,7 +30,7 @@ button {
 .grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
+  /* gap: 1rem; ← 削除 */
 }
 
 .grid-view section {
@@ -38,6 +38,7 @@ button {
   padding: 1rem;
   background-color: #fdfdfd;
   text-align: center;
+  margin: 0.5rem; /* gap の代用 */
 }
 
 /* List View */
@@ -51,14 +52,17 @@ button {
   padding: 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; ← 削除 */
+}
+
+.list-view section > *:not(:last-child) {
+  margin-right: 1rem; /* gap の代わり */
 }
 
 .list-view section img {
   width: 100px;
   height: auto;
 }
-
 
 #member-directory img {
   width: 150px;
@@ -72,5 +76,5 @@ footer {
   background-color: #eee;
   padding: 1rem;
   text-align: center;
-  min-height: 100px; /* ← 明示的な高さ */
+  min-height: 100px;
 }
