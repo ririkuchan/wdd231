@@ -1,0 +1,39 @@
+{
+  "members": [
+    {
+      "name": "Blue Bottle Coffee - Kiyosumi",
+      "address": "1-4-8 Hirano, Koto-ku, Tokyo",
+      "phone": "+81-3-6406-3411",
+      "websiteUrl": "https://store.bluebottlecoffee.jp/pages/kiyosumi",
+      "imageUrl": "images/bluebottle.png"
+    },
+    {
+      "name": "Tsutaya Books - Daikanyama",
+      "address": "17-5 Sarugakucho, Shibuya-ku, Tokyo",
+      "phone": "+81-3-3770-2525",
+      "websiteUrl": "https://store.tsite.jp/daikanyama/",
+      "imageUrl": "images/tsutaya.png"
+    },
+    {
+      "name": "Ginza Akebono - Main Store",
+      "address": "5-6-8 Ginza, Chuo-ku, Tokyo",
+      "phone": "+81-3-3571-3640",
+      "websiteUrl": "https://www.ginza-akebono.co.jp/",
+      "imageUrl": "images/akebono.png"
+    },
+    {
+      "name": "Kinokuniya Bookstore - Shinjuku Main Store",
+      "address": "3-17-7 Shinjuku, Shinjuku-ku, Tokyo",
+      "phone": "+81-3-3354-0131",
+      "websiteUrl": "https://store.kinokuniya.co.jp/store/shinjuku-main-store/",
+      "imageUrl": "images/kinokuniya.png"
+    },
+    {
+      "name": "Usagiya - Ueno",
+      "address": "1-10-10 Ueno, Taito-ku, Tokyo",
+      "phone": "+81-3-3831-6195",
+      "websiteUrl": "http://www.ueno-usagiya.jp/",
+      "imageUrl": "images/usagiya.png"
+    }
+  ]
+}

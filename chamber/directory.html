@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamber Directory</title>
+  <meta name="description" content="Chamber of Commerce Member Directory" />
+  <meta name="author" content="Ririku Shirakawa" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/directory.css" />
+  <link rel="icon" href="../images/favicon.ico" />
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Chamber Member Directory</h1>
+  </header>
+
+  <main>
+    <div class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
+
+    <div id="member-directory" class="grid-view">
+      <!-- JavaScriptで企業情報をここに表示 -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> RIRIKU SHIRAKAWA - Chamber Project</p>
+    <p id="lastModified">Last Modified: </p>
+  </footer>
+
+  <script>
+    // 年表示用
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
+</body>
+</html>
