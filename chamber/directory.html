@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tokyo Chamber of Commerce Member Directory | WDD 231</title>
   <meta name="description" content="Chamber of Commerce Member Directory" />
@@ -28,15 +28,12 @@
 
 <body>
   <header>
-    <!-- ナビゲーションが必要ならここ -->
+    <h1>Tokyo Chamber of Commerce Member Directory</h1>
   </header>
 
   <main>
-    <h1>Tokyo Chamber of Commerce Member Directory</h1>
-
-    <!-- ✅ 監査対策：目に見えるリンク -->
     <p>
-      Visit the <a href="https://tokyochamber.jp" target="_blank" rel="noopener">Tokyo Chamber official website</a>
+      Visit the <a href="https://tokyochamber.jp" target="_blank" rel="noopener noreferrer">Tokyo Chamber official website</a>
       for more information.
     </p>
 
@@ -55,9 +52,6 @@
     <p id="lastModified">Last Modified: </p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-  </script>
+  <script src="scripts/footer.js"></script>
 </body>
 </html>

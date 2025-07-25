@@ -60,5 +60,4 @@ listBtn.addEventListener("click", () => {
   container.classList.remove("grid-view");
 });
 
-// Initialize
 getMembers();
