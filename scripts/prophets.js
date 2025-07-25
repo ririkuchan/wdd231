@@ -1,4 +1,4 @@
-const url = "https://byui-cse.github.io/cse121b/week03/data.json";
+const url = "https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json";
 const cards = document.querySelector(".cards");
 
 async function getProphetData() {
