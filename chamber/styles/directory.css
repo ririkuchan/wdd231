@@ -69,5 +69,8 @@ button {
 }
 
 footer {
-  min-height: 120px; /* 必要に応じて固定サイズに */
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+  min-height: 100px; /* ← 明示的な高さ */
 }
