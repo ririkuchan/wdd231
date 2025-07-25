@@ -36,8 +36,8 @@ function displayMembers(members) {
     logo.src = member.imageUrl;
     logo.alt = `${member.name} logo`;
     logo.loading = "lazy";
-    logo.width = 100;        // 👈 追加
-    logo.height = 100;       // 👈 追加
+    logo.width = 150; // 明示的な幅（px）
+    logo.height = 100; // 明示的な高さ（px）
 
     card.appendChild(name);
     card.appendChild(logo);
