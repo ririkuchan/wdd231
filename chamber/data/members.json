@@ -34,6 +34,20 @@
       "phone": "+81-3-3831-6195",
       "websiteUrl": "http://www.ueno-usagiya.jp/",
       "imageUrl": "images/usagiya.png"
+    },
+    {
+      "name": "Isetan Shinjuku",
+      "address": "3-14-1 Shinjuku, Shinjuku-ku, Tokyo",
+      "phone": "+81-3-3352-1111",
+      "websiteUrl": "https://www.mistore.jp.e.az.hp.transer.com/store/shinjuku.html",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Isetan_Shinjuku_Store.jpg/320px-Isetan_Shinjuku_Store.jpg"
+    },
+    {
+      "name": "Loft - Shibuya",
+      "address": "21-1 Udagawacho, Shibuya-ku, Tokyo",
+      "phone": "+81-3-3462-3807",
+      "websiteUrl": "https://www.loft.co.jp/",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Loft_Shibuya_2013.JPG/320px-Loft_Shibuya_2013.JPG"
     }
   ]
 }
