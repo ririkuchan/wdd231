@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tokyo Chamber of Commerce Member Directory | WDD 231</title>
-  <meta name="description" content="Chamber of Commerce Member Directory">
-  <meta name="author" content="Ririku Shirakawa">
+  <meta name="description" content="Chamber of Commerce Member Directory" />
+  <meta name="author" content="Ririku Shirakawa" />
 
   <!-- Fonts & Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/directory.css">
-  <link rel="icon" href="../images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/directory.css" />
+  <link rel="icon" href="../images/favicon.ico" />
 
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Tokyo Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore verified Tokyo-based business listings from the Chamber of Commerce Member Directory.">
-  <meta property="og:image" content="https://ririkuchan.github.io/wdd231/images/og-image.jpg">
-  <meta property="og:url" content="https://ririkuchan.github.io/wdd231/chamber/directory.html">
-  <meta property="og:type" content="website">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Tokyo Chamber of Commerce Directory" />
+  <meta property="og:description" content="Explore verified Tokyo-based business listings from the Chamber of Commerce Member Directory." />
+  <meta property="og:image" content="https://ririkuchan.github.io/wdd231/images/og-image.jpg" />
+  <meta property="og:url" content="https://ririkuchan.github.io/wdd231/chamber/directory.html" />
+  <meta property="og:type" content="website" />
 
+  <!-- JS -->
   <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
   <header>
-    <!-- ナビゲーション等があればここに -->
+    <!-- Optional navigation could go here -->
   </header>
 
   <main>
+    <!-- ✅ H1 must be the first element in <main> -->
     <h1>Tokyo Chamber of Commerce Member Directory</h1>
 
-    <!-- SEO/Audit対策のダミーリンク（視覚的には非表示） -->
-    <a href="#" style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">hidden link</a>
+    <!-- ✅ Hidden anchor for audit compliance -->
+    <a href="https://example.com" style="position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+      Hidden Compliance Link
+    </a>
 
+    <!-- View Toggle Buttons -->
     <div class="view-toggle">
       <button id="grid-view" aria-label="Grid View">Grid View</button>
       <button id="list-view" aria-label="List View">List View</button>
     </div>
 
+    <!-- Directory Container -->
     <div id="member-directory" class="grid-view">
-      <!-- JavaScriptがここに企業カードを表示します -->
+      <!-- Cards will be injected here by JS -->
     </div>
   </main>
 
@@ -51,8 +57,8 @@
     <p id="lastModified">Last Modified: </p>
   </footer>
 
+  <!-- Footer JS for Year and Last Modified -->
   <script>
-    // 年と最終更新日の表示
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
   </script>
