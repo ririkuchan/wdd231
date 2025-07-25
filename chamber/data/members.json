@@ -5,49 +5,49 @@
       "address": "1-4-8 Hirano, Koto-ku, Tokyo",
       "phone": "+81-3-6406-3411",
       "websiteUrl": "https://store.bluebottlecoffee.jp/pages/kiyosumi",
-      "imageUrl": "images/bluebottle.png"
+      "imageUrl": "images/bluebottle.webp"
     },
     {
       "name": "Tsutaya Books - Daikanyama",
       "address": "17-5 Sarugakucho, Shibuya-ku, Tokyo",
       "phone": "+81-3-3770-2525",
       "websiteUrl": "https://store.tsite.jp/daikanyama/",
-      "imageUrl": "images/tsutaya.png"
+      "imageUrl": "images/tsutaya.webp"
     },
     {
       "name": "Ginza Akebono - Main Store",
       "address": "5-6-8 Ginza, Chuo-ku, Tokyo",
       "phone": "+81-3-3571-3640",
       "websiteUrl": "https://www.ginza-akebono.co.jp/",
-      "imageUrl": "images/akebono.png"
+      "imageUrl": "images/akebono.webp"
     },
     {
       "name": "Kinokuniya Bookstore - Shinjuku Main Store",
       "address": "3-17-7 Shinjuku, Shinjuku-ku, Tokyo",
       "phone": "+81-3-3354-0131",
       "websiteUrl": "https://store.kinokuniya.co.jp/store/shinjuku-main-store/",
-      "imageUrl": "images/kinokuniya.png"
+      "imageUrl": "images/kinokuniya.webp"
     },
     {
       "name": "Usagiya - Ueno",
       "address": "1-10-10 Ueno, Taito-ku, Tokyo",
       "phone": "+81-3-3831-6195",
       "websiteUrl": "http://www.ueno-usagiya.jp/",
-      "imageUrl": "images/usagiya.png"
+      "imageUrl": "images/usagiya.webp"
     },
     {
       "name": "Isetan Shinjuku",
       "address": "3-14-1 Shinjuku, Shinjuku-ku, Tokyo",
       "phone": "+81-3-3352-1111",
       "websiteUrl": "https://www.mistore.jp.e.az.hp.transer.com/store/shinjuku.html",
-      "imageUrl": "images/isetan-shinjuku.png"
+      "imageUrl": "images/isetan-shinjuku.webp"
     },
     {
       "name": "Loft - Shibuya",
       "address": "21-1 Udagawacho, Shibuya-ku, Tokyo",
       "phone": "+81-3-3462-3807",
       "websiteUrl": "https://www.loft.co.jp/",
-      "imageUrl": "images/loft-shibuya.png"
+      "imageUrl": "images/loft-shibuya.webp"
     }
   ]
 }
