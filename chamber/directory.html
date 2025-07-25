@@ -28,15 +28,16 @@
 
 <body>
   <header>
-    <!-- Site navigation could go here -->
+    <!-- ナビゲーションが必要ならここ -->
   </header>
 
   <main>
     <h1>Tokyo Chamber of Commerce Member Directory</h1>
 
-    <!-- Visible link required for audit -->
-    <p class="audit-link">
-      Visit our <a href="https://tokyochamber.jp" target="_blank" rel="noopener">official chamber website</a> for more info.
+    <!-- ✅ 監査対策：目に見えるリンク -->
+    <p>
+      Visit the <a href="https://tokyochamber.jp" target="_blank" rel="noopener">Tokyo Chamber official website</a>
+      for more information.
     </p>
 
     <div class="view-toggle">
@@ -45,7 +46,7 @@
     </div>
 
     <div id="member-directory" class="grid-view">
-      <!-- JavaScript inserts member cards here -->
+      <!-- JavaScriptが企業を表示 -->
     </div>
   </main>
 
@@ -55,10 +56,8 @@
   </footer>
 
   <script>
-    // Year and last modified
     document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent =
-      "Last Modified: " + document.lastModified;
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
   </script>
 </body>
 </html>
