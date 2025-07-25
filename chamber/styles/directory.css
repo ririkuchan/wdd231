@@ -61,9 +61,13 @@ button {
 
 
 #member-directory img {
-  max-width: 100px;
-  height: auto;
+  width: 150px;
+  height: 100px;
   display: block;
   margin: 0 auto 0.5rem;
   object-fit: contain;
+}
+
+footer {
+  min-height: 120px; /* 必要に応じて固定サイズに */
 }
