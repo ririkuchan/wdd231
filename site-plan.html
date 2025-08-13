@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>W05 Project: Site Plan – Tokyo Tea Trail</title>
+  <meta name="description" content="Site plan for the 'Tokyo Tea Trail' project (WDD 231 Week 05)." />
+  <!-- 6. Typography Named and Used -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site-plan.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Site Plan</h1>
+    <p class="subtitle">Project: <strong>Tokyo Tea Trail</strong></p>
+  </header>
+
+  <main class="container">
+    <!-- 1. Site Name -->
+    <section id="site-name">
+      <h2>1. Site Name</h2>
+      <p><strong>Tokyo Tea Trail</strong> — A curated guide to artisan tea shops and modern tea culture across Tokyo.</p>
+    </section>
+
+    <!-- 2. Site Purpose -->
+    <section id="site-purpose">
+      <h2>2. Site Purpose</h2>
+      <p>
+        This site helps visitors discover outstanding tea spots in Tokyo and learn simple brewing methods.
+        The content includes (1) shop guides with maps, (2) tasting notes for Japanese and Chinese teas,
+        and (3) downloadable checklists for home brewing essentials.
+      </p>
+    </section>
+
+    <!-- 3. Scenarios -->
+    <section id="scenarios">
+      <h2>3. Scenarios (Target Audience Questions)</h2>
+      <ol>
+        <li>“Where can I find a quiet tea shop near Shibuya for a first Sencha tasting?”</li>
+        <li>“What minimal tools do I need to brew Gyokuro at home?”</li>
+        <li>“Which shops host weekend tea events or workshops?”</li>
+      </ol>
+    </section>
+
+    <!-- 4 & 5. Color Schema + Use in Document -->
+    <section id="color-schema">
+      <h2>4. Color Schema</h2>
+      <p>Primary brand colors and intended usage:</p>
+
+      <div class="swatches">
+        <div class="swatch">
+          <div class="chip chip--primary" aria-hidden="true"></div>
+          <div>
+            <div class="hex">#14532D</div>
+            <div class="use">Primary — headers, buttons</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip chip--accent" aria-hidden="true"></div>
+          <div>
+            <div class="hex">#F472B6</div>
+            <div class="use">Accent — links, highlights</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip chip--bg" aria-hidden="true"></div>
+          <div>
+            <div class="hex">#FAFAF9</div>
+            <div class="use">Background — page base</div>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip chip--text" aria-hidden="true"></div>
+          <div>
+            <div class="hex">#1F2937</div>
+            <div class="use">Body Text</div>
+          </div>
+        </div>
+      </div>
+
+      <h3>5. Color Schema Use in Document (Applied)</h3>
+      <p>
+        This document uses the <strong>Primary</strong> color for headings,
+        <a href="#wireframes">Accent links</a> for navigation cues,
+        a light <strong>Background</strong>, and dark <strong>Body Text</strong>.
+      </p>
+    </section>
+
+    <!-- 6. Typography Named and Used -->
+    <section id="typography">
+      <h2>6. Typography</h2>
+      <ul>
+        <li><strong>Headings:</strong> <code>Playfair Display</code> (serif, 700) — applied to <code>h1–h3</code></li>
+        <li><strong>Body:</strong> <code>Inter</code> (sans-serif, 400/600) — applied to paragraphs and lists</li>
+      </ul>
+      <div class="type-demo">
+        <h3>Heading Sample (Playfair Display)</h3>
+        <p>Body text sample in Inter. Clear and legible for guides and checklists.</p>
+      </div>
+    </section>
+
+    <!-- 7. Wireframe -->
+    <section id="wireframes">
+      <h2>7. Wireframes</h2>
+      <div class="wireframes">
+        <figure>
+          <figcaption>Mobile Home (375px)</figcaption>
+          <svg viewBox="0 0 240 480" role="img" aria-label="Mobile wireframe">
+            <rect x="1" y="1" width="238" height="478" fill="none" stroke="#1F2937"/>
+            <rect x="16" y="16" width="208" height="32" fill="#14532D" opacity="0.25"/>
+            <rect x="16" y="64" width="208" height="24" fill="#F472B6" opacity="0.25"/>
+            <rect x="16" y="96" width="208" height="80" fill="#1F2937" opacity="0.10"/>
+            <rect x="16" y="184" width="208" height="80" fill="#1F2937" opacity="0.10"/>
+            <rect x="16" y="272" width="208" height="80" fill="#1F2937" opacity="0.10"/>
+            <rect x="16" y="368" width="96" height="28" fill="#14532D" opacity="0.25"/>
+            <rect x="128" y="368" width="96" height="28" fill="#14532D" opacity="0.25"/>
+          </svg>
+        </figure>
+        <figure>
+          <figcaption>Wider View (Desktop 1200px)</figcaption>
+          <svg viewBox="0 0 600 360" role="img" aria-label="Desktop wireframe">
+            <rect x="1" y="1" width="598" height="358" fill="none" stroke="#1F2937"/>
+            <rect x="16" y="16" width="568" height="40" fill="#14532D" opacity="0.25"/>
+            <rect x="16" y="72" width="360" height="200" fill="#1F2937" opacity="0.10"/>
+            <rect x="392" y="72" width="192" height="96" fill="#1F2937" opacity="0.10"/>
+            <rect x="392" y="176" width="192" height="96" fill="#1F2937" opacity="0.10"/>
+            <rect x="16" y="288" width="120" height="32" fill="#14532D" opacity="0.25"/>
+            <rect x="144" y="288" width="120" height="32" fill="#14532D" opacity="0.25"/>
+          </svg>
+        </figure>
+      </div>
+      <p class="note">Blocks indicate header, hero/content sections, side panels, and primary actions.</p>
+    </section>
+
+    <!-- 8. Valid HTML and CSS -->
+    <section id="validity">
+      <h2>8. Valid HTML and CSS</h2>
+      <ul>
+        <li>Semantic elements used; proper title and meta provided.</li>
+        <li>HTML/CSS are intended to pass W3C validators.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>WDD 231 • Week 05 • Site Plan</small>
+  </footer>
+</body>
+</html>
