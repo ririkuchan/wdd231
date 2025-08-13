@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Kanda Tea Room", "description": "Small-batch sencha.", "area": "Chiyoda", "price": "$$", "image": "images/item01.webp" },
+  { "id": 2, "name": "Ueno Craft Gallery", "description": "Workshops & tools.", "area": "Taito", "price": "$$", "image": "images/item02.webp" },
+  { "id": 3, "name": "Shibuya Brew Lab", "description": "Modern cold-brew.", "area": "Shibuya", "price": "$$", "image": "images/item03.webp" },
+  { "id": 4, "name": "Asakusa Heritage", "description": "Traditional sets.", "area": "Taito", "price": "$$", "image": "images/item04.webp" },
+  { "id": 5, "name": "Ginza Leaf Stand", "description": "Gyokuro flight.", "area": "Chuo", "price": "$$$", "image": "images/item05.webp" },
+  { "id": 6, "name": "Meguro Riverside", "description": "Terrace & light meals.", "area": "Meguro", "price": "$$", "image": "images/item06.webp" },
+  { "id": 7, "name": "Kichijoji Commons", "description": "Community tastings.", "area": "Musashino", "price": "$$", "image": "images/item07.webp" },
+  { "id": 8, "name": "Nihonbashi Hub", "description": "Business-friendly.", "area": "Chuo", "price": "$$", "image": "images/item08.webp" },
+  { "id": 9, "name": "Yanaka Alley", "description": "Retro tea street.", "area": "Taito", "price": "$", "image": "images/item09.webp" },
+  { "id": 10, "name": "Aoyama Leaves", "description": "Single-origin teas.", "area": "Minato", "price": "$$$", "image": "images/item10.webp" },
+  { "id": 11, "name": "Nakame Blend", "description": "Blends & pairings.", "area": "Meguro", "price": "$$", "image": "images/item11.webp" },
+  { "id": 12, "name": "Tsukiji Steam", "description": "Seafood pairings.", "area": "Chuo", "price": "$$", "image": "images/item12.webp" },
+  { "id": 13, "name": "Ikebukuro Lab", "description": "Tasting flights.", "area": "Toshima", "price": "$$", "image": "images/item13.webp" },
+  { "id": 14, "name": "Shinagawa Steeps", "description": "Daily specials.", "area": "Shinagawa", "price": "$", "image": "images/item14.webp" },
+  { "id": 15, "name": "Akihabara Kettle", "description": "Gadgets & tea.", "area": "Chiyoda", "price": "$$", "image": "images/item15.webp" }
+]
