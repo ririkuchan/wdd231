@@ -1,6 +1,8 @@
 :root{
   --bg:#f8fafc;--text:#111827;--muted:#374151;--brand:#0f766e;--ring:#e5e7eb;--card:#fff
 }
+h1{font-size:2rem} h2{font-size:1.5rem} h3{font-size:1.25rem}
+
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,Segoe UI,Roboto,Inter,Arial,sans-serif}
 .container{max-width:1100px;margin:auto;padding:1rem}
