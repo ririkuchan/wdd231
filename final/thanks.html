@@ -10,10 +10,50 @@
   <link rel="stylesheet" href="styles/base.css" />
 </head>
 <body>
-<main class="container">
-  <h1>Thank you!</h1>
-  <p>We received your submission.</p>
-  <a class="btn" href="index.html">Back to Home</a>
-</main>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main" class="container">
+    <h1>Thank you!</h1>
+
+    <!-- This line will be customized by the script below -->
+    <p id="ack">We received your submission.</p>
+
+    <!-- Optional: Echo submitted fields (accessible live region) -->
+    <div id="receipt" class="muted" aria-live="polite"></div>
+
+    <a class="btn" href="index.html">Back to Home</a>
+  </main>
+
+  <script>
+    // Read URL search params and show a friendly confirmation
+    (function () {
+      const p = new URLSearchParams(location.search);
+      const name    = (p.get('name')    || '').trim();
+      const email   = (p.get('email')   || '').trim();
+      const subject = (p.get('subject') || '').trim();
+      const message = (p.get('message') || '').trim();
+
+      const ack = document.getElementById('ack');
+      const receipt = document.getElementById('receipt');
+
+      const who = name || 'Friend';
+      ack.textContent = `Thanks, ${who}!` + (email ? ` We’ll reply to ${email}.` : '');
+
+      // Build a small summary list, safely using textContent
+      const list = document.createElement('dl');
+      function add(term, value){
+        if (!value) return;
+        const dt = document.createElement('dt'); dt.textContent = term;
+        const dd = document.createElement('dd'); dd.textContent = value;
+        list.append(dt, dd);
+      }
+      add('Subject', subject);
+      add('Message', message);
+
+      if (list.children.length) receipt.appendChild(list);
+    })();
+  </script>
 </body>
 </html>

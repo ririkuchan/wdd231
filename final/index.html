@@ -16,43 +16,48 @@
   <script type="module" src="scripts/main.js" defer></script>
 </head>
 <body>
-<header class="site-header">
-  <button class="menu-btn" aria-expanded="false" aria-controls="nav">☰</button>
-  <a class="brand" href="index.html">Tokyo Tea Trail</a>
-  <nav id="nav" class="nav" aria-label="Primary">
-    <a aria-current="page" href="index.html">Home</a>
-    <a href="catalog.html">Catalog</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
 
-<main class="container">
-  <section class="hero">
-    <h1>Discover Our Tea Community</h1>
-    <p>Browse curated tea spots, tools, and tips. Save favorites with local storage, and explore details in a11y-friendly modals.</p>
-    <a class="btn" href="catalog.html">Explore the Catalog</a>
-  </section>
+  <!-- 追加：スキップリンク（読み上げ＆キーボード向け） -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <section class="features">
-    <article>
-      <h2>Responsive Design</h2>
-      <p>No horizontal scroll from 320px up. Lightweight &lt; 500kB/page.</p>
-    </article>
-    <article>
-      <h2>Dynamic Data</h2>
-      <p>Fetch 15+ items from JSON. Filter/map to find your next favorite.</p>
-    </article>
-    <article>
-      <h2>Accessible Modals</h2>
-      <p>Keyboard-friendly details and proper aria attributes.</p>
-    </article>
-  </section>
-</main>
+  <header class="site-header">
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">☰</button>
+    <a class="brand" href="index.html">Tokyo Tea Trail</a>
+    <nav id="nav" class="nav" aria-label="Primary">
+      <a aria-current="page" href="index.html">Home</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<footer class="site-footer">
-  <small>&copy; <span id="year"></span> Tokyo Tea Trail</small> ·
-  <a href="attributions.html">Attributions</a> ·
-  <a href="https://youtu.be/your-demo-link" target="_blank" rel="noopener">Demo Video</a>
-</footer>
+  <!-- 追加：mainにid="main" -->
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Discover Our Tea Community</h1>
+      <p>Browse curated tea spots, tools, and tips. Save favorites with local storage, and explore details in a11y-friendly modals.</p>
+      <a class="btn" href="catalog.html">Explore the Catalog</a>
+    </section>
+
+    <section class="features">
+      <article>
+        <h2>Responsive Design</h2>
+        <p>No horizontal scroll from 320px up. Lightweight &lt; 500kB/page.</p>
+      </article>
+      <article>
+        <h2>Dynamic Data</h2>
+        <p>Fetch 15+ items from JSON. Filter/map to find your next favorite.</p>
+      </article>
+      <article>
+        <h2>Accessible Modals</h2>
+        <p>Keyboard-friendly details and proper aria attributes.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; <span id="year"></span> Tokyo Tea Trail</small> ·
+    <a href="attributions.html">Attributions</a> ·
+    <a href="https://youtu.be/your-demo-link" target="_blank" rel="noopener">Demo Video</a>
+  </footer>
 </body>
 </html>
