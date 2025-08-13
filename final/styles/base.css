@@ -69,12 +69,24 @@ a{color:var(--brand)}
   float:right;
   border:0; background:#fff; font-size:1.5rem; cursor:pointer;
 }
-
-/* 追加（どこでもOK） */
 :focus-visible{
   outline:3px solid var(--brand);
   outline-offset:2px;
 }
+.visually-hidden{
+  position:absolute !important;
+  height:1px;width:1px;overflow:hidden;
+  clip:rect(1px,1px,1px,1px);white-space:nowrap
+}
+.muted{color:var(--muted);font-size:.9rem;margin:.25rem 0 .5rem}
+
+/* 既に入れてなければスキップリンクの表示用 */
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{
+  left:1rem;top:1rem;z-index:1000;background:#fff;
+  padding:.5rem;border:2px solid var(--brand);border-radius:.5rem
+}
+
 
 
 /* responsive */
