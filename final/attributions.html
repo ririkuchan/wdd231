@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Attributions</title></head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Credits | Tokyo Tea Trail</title>
+  <meta name="description" content="Image attributions and licenses for Tokyo Tea Trail." />
+  <meta name="author" content="Ririku Shirakawa" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <style>
+    .credits{max-width:900px;margin:auto;padding:1rem}
+    .credits h1{margin-bottom:.25rem}
+    .credits p.muted{color:var(--muted)}
+    .credits ol{padding-left:1.25rem}
+    .credits li{margin:.5rem 0}
+    .file{font-family:ui-monospace,Menlo,Consolas,monospace}
+    .license{font-size:.95rem;color:var(--muted)}
+  </style>
+</head>
 <body>
-  <h1>Attributions</h1>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="index.html">Tokyo Tea Trail</a>
+  <nav id="nav" class="nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="catalog.html">Catalog</a>
+    <a href="contact.html">Contact</a>
+    <a aria-current="page" href="attributions.html">Attributions</a>
+  </nav>
+</header>
+
+<main id="main" class="credits">
+  <h1>Image Credits</h1>
+  <p class="muted">Each image lists the original page and license. Replace the placeholders with your actual sources.</p>
+
+  <h2>Catalog Cards</h2>
+  <ol>
+    <li><span class="file">images/item01.webp</span> — “Kanda Tea Room” — Photo by
+      <a href="AUTHOR_PROFILE_URL" target="_blank" rel="noopener">AUTHOR NAME</a> on
+      <a href="PHOTO_PAGE_URL" target="_blank" rel="noopener">Unsplash</a>.
+      <span class="license">License: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash License</a></span>
+    </li>
+    <li><span class="file">images/item02.webp</span> — “Ueno Craft Gallery” — Photo by
+      <a href="AUTHOR_PROFILE_URL" target="_blank" rel="noopener">AUTHOR NAME</a> on
+      <a href="PHOTO_PAGE_URL" target="_blank" rel="noopener">Pexels</a>.
+      <span class="license">License: <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a></span>
+    </li>
+    <li><span class="file">images/item03.webp</span> — “Shibuya Brew Lab” — Photo by
+      <a href="AUTHOR_PROFILE_URL" target="_blank" rel="noopener">AUTHOR NAME</a> on
+      <a href="PHOTO_PAGE_URL" target="_blank" rel="noopener">Pixabay</a>.
+      <span class="license">License: <a href="https://pixabay.com/service/license/" target="_blank" rel="noopener">Pixabay License</a></span>
+    </li>
+    <li><span class="file">images/item04.webp</span> — “Ginza Leaf Stand” — by
+      <a href="AUTHOR_PROFILE_URL" target="_blank" rel="noopener">AUTHOR NAME</a>,
+      <a href="FILE_PAGE_URL" target="_blank" rel="noopener">Wikimedia Commons</a>.
+      <span class="license">License: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></span>
+    </li>
+    <!-- item05〜item15 も同じパターンで繰り返し（Unsplash/Pexels/Pixabay/Wikimediaのいずれか） -->
+  </ol>
+
+  <h2>Site-wide / Other</h2>
   <ul>
-    <li>Photos: Unsplash/Pexels… (list each URL)</li>
-    <li>Text references: …</li>
+    <li><span class="file">images/og.jpg</span> — Photo by
+      <a href="AUTHOR_PROFILE_URL" target="_blank" rel="noopener">AUTHOR NAME</a> on
+      <a href="PHOTO_PAGE_URL" target="_blank" rel="noopener">Unsplash</a>.
+      <span class="license">License: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash License</a></span>
+    </li>
+    <li><span class="file">images/linkedin.webp</span>, <span class="file">images/github.webp</span>, <span class="file">images/youtube.webp</span> — Icons from
+      <a href="https://simpleicons.org/" target="_blank" rel="noopener">Simple Icons</a> (License: <a href="https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md" target="_blank" rel="noopener">CC0-1.0</a>).
+    </li>
   </ul>
+
+  <p class="muted">If a photo is your own: “© 2025 Ririku Shirakawa. All rights reserved.”</p>
+</main>
+
+<footer class="site-footer">
+  <small>&copy; <span id="year"></span> Tokyo Tea Trail</small> ·
+  <a href="attributions.html" aria-current="page">Attributions</a> ·
+  <a href="https://youtu.be/your-demo-link" target="_blank" rel="noopener">Demo Video</a>
+</footer>
 </body>
 </html>
