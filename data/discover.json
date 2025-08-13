@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Kanda Tea Room",
+    "address": "1-2-3 Kanda, Chiyoda",
+    "description": "Small-batch sencha and seasonal wagashi.",
+    "image": "images/tea01.webp",
+    "url": "https://example.com/kanda"
+  },
+  {
+    "name": "Ueno Craft Gallery",
+    "address": "2-4-10 Ueno, Taito",
+    "description": "Local artisans & weekend workshops.",
+    "image": "images/tea02.webp",
+    "url": "https://example.com/ueno"
+  },
+  {
+    "name": "Shibuya Brew Lab",
+    "address": "12-8 Shibuya",
+    "description": "Modern cold-brew and tastings.",
+    "image": "images/tea03.webp",
+    "url": "https://example.com/shibuya"
+  },
+  {
+    "name": "Asakusa Heritage Shop",
+    "address": "5-15 Asakusa",
+    "description": "Traditional tools and tea sets.",
+    "image": "images/tea04.webp",
+    "url": "https://example.com/asakusa"
+  },
+  {
+    "name": "Ginza Leaf Stand",
+    "address": "7-9 Ginza, Chuo",
+    "description": "Premium gyokuro flight.",
+    "image": "images/tea05.webp",
+    "url": "https://example.com/ginza"
+  },
+  {
+    "name": "Meguro Riverside",
+    "address": "3-2 Meguro",
+    "description": "Outdoor terrace and light meals.",
+    "image": "images/tea06.webp",
+    "url": "https://example.com/meguro"
+  },
+  {
+    "name": "Kichijoji Commons",
+    "address": "4-1 Kichijoji",
+    "description": "Community tastings on Fridays.",
+    "image": "images/tea07.webp",
+    "url": "https://example.com/kichijoji"
+  },
+  {
+    "name": "Nihonbashi Hub",
+    "address": "1-6 Nihonbashi",
+    "description": "Business-friendly lounge.",
+    "image": "images/tea08.webp",
+    "url": "https://example.com/nihonbashi"
+  }
+]

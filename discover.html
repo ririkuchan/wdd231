@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discover Tokyo | Chamber</title>
+  <meta name="description" content="Discover page with local businesses, events, and resources." />
+
+  <!-- global styles already in your project; keep them -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <!-- discover page styles -->
+  <link rel="stylesheet" href="styles/discover.css">
+</head>
+<body>
+<header>
+  <img src="images/header.webp" alt="Ririku Shirakawa site banner" width="120" />
+  <span>Ririku Shirakawa - WDD 231</span>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="directory.html">Directory</a>
+  <a aria-current="page" href="discover.html">Discover</a>
+</nav>
+
+
+<main id="main" class="discover-grid">
+  <section class="hero" aria-label="City highlight">
+    <h1>Discover Our Community</h1>
+    <p>Explore places to shop, learn, and relax this week.</p>
+  </section>
+
+  <!-- 8. Custom Message using localStorage -->
+  <aside class="visit" aria-live="polite">
+    <h2>Your Visit</h2>
+    <p id="visitMessage">Checking your last visit…</p>
+  </aside>
+
+  <!-- 10–13. JSON → Cards, Named Grid Areas, Eight WebP Images -->
+  <section class="cards" aria-label="Featured spots">
+    <!-- cards will be injected by discover.js -->
+  </section>
+
+  <aside class="events">
+    <h2>Upcoming</h2>
+    <ul>
+      <li>Sat 10:00 – Farmers Market</li>
+      <li>Wed 19:00 – Small Biz Meetup</li>
+      <li>Fri 18:00 – Art Walk</li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 RIRIKU SHIRAKAWA • Tokyo, Japan</p>
+    <p>The total credits for course listed above is 6</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/linkedin.webp" alt="LinkedIn icon"></a>
+      <a href="#"><img src="images/github.webp" alt="GitHub icon"></a>
+      <a href="#"><img src="images/youtube.webp" alt="Youtube icon"></a>
+    </div>
+    <p id="lastModified">Last Modified: </p>
+</footer>
+
+<!-- scripts -->
+<script src="scripts/discover.js" defer></script>
+<script src="scripts/date.js" defer></script>
+</body>
+</html>

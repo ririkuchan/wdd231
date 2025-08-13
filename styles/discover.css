@@ -1,0 +1,89 @@
+/* Color contrast AA friendly (dark on light) and light weight */
+:root{
+  --bg:#f8fafc;      /* light slate */
+  --text:#111827;    /* almost black */
+  --muted:#374151;   /* headings */
+  --accent:#0f766e;  /* buttons/links */
+  --card:#ffffff;
+  --ring:#e5e7eb;
+}
+
+body{background:var(--bg);color:var(--text)}
+.site-header,.site-footer{background:#fff;border-block:1px solid var(--ring)}
+.topnav{display:flex;gap:1rem;justify-content:center;padding:.75rem}
+.topnav a{color:var(--accent);text-decoration:none;font-weight:600}
+.topnav a[aria-current="page"]{text-decoration:underline}
+
+.discover-grid{
+  display:grid;
+  grid-template-areas:
+    "hero"
+    "visit"
+    "cards"
+    "events";
+  gap:1rem;
+  padding:1rem;
+  max-width:1100px;
+  margin-inline:auto;
+}
+
+/* 12. Named Grid Areas (layout 1: mobile) */
+.hero{grid-area:hero;background:var(--card);padding:1rem;border:1px solid var(--ring);border-radius:12px}
+.visit{grid-area:visit;background:var(--card);padding:1rem;border:1px solid var(--ring);border-radius:12px}
+.cards{grid-area:cards;display:grid;grid-template-columns:1fr;gap:1rem}
+.events{grid-area:events;background:var(--card);padding:1rem;border:1px solid var(--ring);border-radius:12px}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--ring);
+  border-radius:14px;
+  overflow:hidden;
+  display:grid;
+  grid-template-rows:auto 1fr auto;
+}
+.card .imgwrap{aspect-ratio:16/10;overflow:hidden}
+.card img{
+  width:100%;height:100%;object-fit:cover;
+  display:block;
+  /* 14. Hover effect only on larger views (enabled below) */
+  transition:transform .35s ease;
+}
+.card-content{padding:0.75rem 1rem}
+.card h3{margin:0 0 .25rem;color:var(--muted);font-size:1.1rem}
+.card p{margin:.25rem 0 .5rem}
+.card a.btn{
+  display:inline-block;margin:.25rem 0 1rem;padding:.5rem .75rem;
+  background:var(--accent);color:white;border-radius:10px;text-decoration:none;font-weight:600
+}
+
+/* 12. Named Grid Areas (layout 2: tablet) */
+@media (min-width: 640px){
+  .discover-grid{
+    grid-template-columns:2fr 1fr;
+    grid-template-areas:
+      "hero   visit"
+      "cards  visit"
+      "cards  events";
+  }
+  .cards{grid-template-columns:repeat(2, minmax(0,1fr))}
+}
+
+/* 12. Named Grid Areas (layout 3: desktop) */
+@media (min-width: 960px){
+  .discover-grid{
+    grid-template-columns:2fr 1fr;
+    grid-template-areas:
+      "hero   events"
+      "cards  events"
+      "visit  events";
+  }
+  .cards{grid-template-columns:repeat(3, minmax(0,1fr))}
+  /* 14. Hover effect: desktop only */
+  .card:hover img{transform:scale(1.05)}
+}
+
+/* accessibility */
+.skip-link{
+  position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden
+}
+.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#fff;border:2px solid var(--accent);padding:.25rem .5rem}
