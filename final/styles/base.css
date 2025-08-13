@@ -16,16 +16,66 @@ a{color:var(--brand)}
 .features article{background:#fff;border:1px solid var(--ring);border-radius:1rem;padding:1rem}
 .grid{display:grid;grid-template-columns:1fr;gap:1rem}
 .card{background:#fff;border:1px solid var(--ring);border-radius:1rem;overflow:hidden}
-.card img{width:100%;height:auto;display:block;transition:transform .3s}
-.card:hover img{transform:scale(1.03)}
+/* 画像の見た目をそろえる（そのままでOK） */
+.card__img{
+  width:100%;
+  aspect-ratio:16/10;
+  height:auto;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  background:#eef2f7;
+  border-bottom:1px solid var(--ring);
+  /* ← 追加：滑らかに拡大 */
+  transition: transform .3s ease;
+}
+
+/* ← 変更：対象を .card__img に限定 */
+.card:hover .card__img{ transform: scale(1.03); }
 .card__body{padding:.75rem 1rem}
 .form{display:grid;gap:.75rem;max-width:560px}
 .form input,.form textarea{width:100%;padding:.6rem;border:1px solid var(--ring);border-radius:.6rem;background:#fff}
 .site-footer{border-top:1px solid var(--ring);background:#fff;padding:1rem;text-align:center}
 .modal.hidden{display:none}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:grid;place-items:center;padding:1rem}
-.modal__card{background:#fff;border-radius:1rem;max-width:760px;width:100%;padding:1rem;border:1px solid var(--ring)}
-.modal__close{float:right;border:0;background:#fff;font-size:1.5rem}
+/* モーダル全体：画面に少し余白を残す */
+.modal{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.5);
+  display:grid; place-items:center;
+  padding:1rem;              /* 画面端とモーダルの間の余白 */
+}
+/* カードの最大サイズを画面に合わせる（幅・高さの上限） */
+.modal__card{
+  background:#fff; border:1px solid var(--ring);
+  border-radius:1rem;
+  width:min(92vw, 680px);    /* 画面幅の92%か、680pxの小さい方 */
+  max-height:88vh;           /* 画面の高さの88%を上限に */
+  overflow:auto;             /* はみ出したら中だけスクロール */
+  padding:1rem;
+}
+
+/* 画像も小さめに収める（必要なら cover に変更） */
+.modal__card img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:40vh;           /* 画像が大きすぎないように */
+  object-fit:contain;        /* 画像を切り取らずに表示。切り取りOKなら cover */
+  border-radius:.75rem;
+}
+
+/* ×ボタンはクリックしやすく */
+.modal__close{
+  float:right;
+  border:0; background:#fff; font-size:1.5rem; cursor:pointer;
+}
+
+/* 追加（どこでもOK） */
+:focus-visible{
+  outline:3px solid var(--brand);
+  outline-offset:2px;
+}
+
 
 /* responsive */
 @media (min-width:640px){
