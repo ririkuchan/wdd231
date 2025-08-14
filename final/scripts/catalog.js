@@ -57,7 +57,7 @@ function render(items) {
         <p>${it.description}</p>
         <p><strong>Area:</strong> ${it.area}</p>
         <p><strong>Price:</strong> ${priceText}</p>
-        <div style="display:flex;gap:.5rem;align-items:center">
+        <div class="card__actions">
           <button class="btn btn--more" data-id="${it.id}">Details</button>
           <button class="btn btn--fav" data-id="${it.id}" aria-pressed="${it.favorite}">
             ${it.favorite ? '★ Favorited' : '☆ Favorite'}
