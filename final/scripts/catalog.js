@@ -13,26 +13,32 @@ const favToggle = document.getElementById('favToggle');
 const countEl = document.getElementById('count');
 
 function updateCount(n) {
-  if (countEl) countEl.textContent = `${n} spots`;
+  countEl && (countEl.textContent = `${n} spots`);
 }
 
-function render(items) {
-  grid.innerHTML = '';
+// 現在のビュー状態（お気に入りのみを表示しているか）
+let showingFavs = false;
 
+// 現在の表示対象データを返す（お気に入りフィルタ＆検索を適用）
+function getViewData(allItems) {
   const favs = new Set(getFavs());
-  const term = (q?.value || '').toLowerCase().trim();
+  const base = showingFavs ? allItems.filter(it => favs.has(Number(it.id))) : allItems;
 
-  // filter + map（配列メソッド使用）
-  const filtered = items
+  const term = (q?.value || '').toLowerCase().trim();
+  return base
     .filter(it =>
       it.name.toLowerCase().includes(term) ||
       (it.description || '').toLowerCase().includes(term) ||
       (it.area || '').toLowerCase().includes(term)
     )
     .map(it => ({ ...it, favorite: favs.has(Number(it.id)) }));
+}
+
+function render(items) {
+  grid.innerHTML = '';
+  const filtered = getViewData(items);
 
   const frag = document.createDocumentFragment();
-
   filtered.forEach(it => {
     const card = document.createElement('article');
     card.className = 'card';
@@ -44,6 +50,7 @@ function render(items) {
            alt="${it.name}"
            loading="lazy"
            decoding="async"
+           fetchpriority="low"
            width="640" height="400">
       <div class="card__body">
         <h3>${it.name}</h3>
@@ -72,18 +79,14 @@ let ALL = [];
   render(ALL);
 })();
 
-// search
+// search: 文字入力で再描画
 q?.addEventListener('input', () => render(ALL));
 
-// show favorites toggle
+// show favorites toggle（状態を保持）
 favToggle?.addEventListener('click', () => {
-  const isPressed = favToggle.getAttribute('aria-pressed') === 'true';
-  const next = !isPressed;
-  favToggle.setAttribute('aria-pressed', String(next));
-
-  const favs = new Set(getFavs());
-  const view = next ? ALL.filter(it => favs.has(Number(it.id))) : ALL;
-  render(view);
+  showingFavs = !(favToggle.getAttribute('aria-pressed') === 'true');
+  favToggle.setAttribute('aria-pressed', String(showingFavs));
+  render(ALL);
 });
 
 // card buttons: details / favorite
@@ -103,7 +106,7 @@ grid?.addEventListener('click', (e) => {
     const favs = new Set(getFavs());
     favs.has(id) ? favs.delete(id) : favs.add(id);
     setFavs([...favs]);
-    // 再描画（現在のビューに合わせるため、検索語を維持）
+    // 現在のビュー状態（検索語・お気に入り表示）を保ったまま再描画
     render(ALL);
   }
 });

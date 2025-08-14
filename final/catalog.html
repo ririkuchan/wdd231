@@ -8,7 +8,11 @@
   <meta name="author" content="Ririku Shirakawa" />
   <link rel="icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="styles/base.css" />
-  <script type="module" src="scripts/catalog.js" defer></script>
+
+  <!-- classic + defer（ハンバーガー/年号） -->
+  <script src="scripts/main.js" defer></script>
+  <!-- module（import を使うカタログ用）※defer 付けない -->
+  <script type="module" src="scripts/catalog.js"></script>
 </head>
 <body>
 
@@ -28,7 +32,7 @@
   <h1>Catalog</h1>
 
   <div class="toolbar">
-    <!-- 見えるラベル（視覚的には非表示） -->
+    <!-- 視覚的に非表示のラベル（スクリーンリーダー用） -->
     <label for="q" class="visually-hidden">Search by name</label>
     <input id="q" type="search" placeholder="Search by name…">
 
@@ -46,7 +50,8 @@
   <div class="modal__card" role="document">
     <button class="modal__close" aria-label="Close">×</button>
     <h2 id="modalTitle"></h2>
-    <img id="modalImg" alt="" loading="lazy" width="800" height="500" />
+    <!-- モーダルは即時表示したいので eager 推奨（lazy でも可） -->
+    <img id="modalImg" alt="" loading="eager" decoding="async" width="800" height="500" />
     <p id="modalDesc"></p>
     <p><strong>Area:</strong> <span id="modalArea"></span></p>
     <p><strong>Price:</strong> <span id="modalPrice"></span></p>
