@@ -16,29 +16,20 @@
   <meta property="og:url" content="https://ririkuchan.github.io/wdd231/final/index.html" />
   <meta property="og:title" content="Tokyo Tea Trail" />
   <meta property="og:description" content="Discover artisan tea spots and brewing tips in Tokyo." />
-  <!-- 絶対URLに変更（同ドメイン配下） -->
   <meta property="og:image" content="https://ririkuchan.github.io/wdd231/final/images/og.jpg" />
-  <!-- 可能なら画像を 1200×630 にして、サイズも明示（任意だが安定） -->
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
-  <!-- Twitter Card（任意だがスコア安定） -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tokyo Tea Trail" />
-  <meta name="twitter:description" content="Discover artisan tea spots and brewing tips in Tokyo." />
-  <meta name="twitter:image" content="https://ririkuchan.github.io/wdd231/final/images/og.jpg" />
   <link rel="icon" href="images/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css" />
-  <!-- main.js が import を使っていないなら classic+defer 推奨。import を使うなら type=module で defer なし -->
+  <!-- classic + defer（importを使わないmain.js用） -->
   <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
-
-  <!-- 追加：スキップリンク（読み上げ＆キーボード向け） -->
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
@@ -51,7 +42,6 @@
     </nav>
   </header>
 
-  <!-- 追加：mainにid="main" -->
   <main id="main" class="container">
     <section class="hero">
       <h1>Discover Our Tea Community</h1>
@@ -73,6 +63,22 @@
         <p>Keyboard-friendly details and proper aria attributes.</p>
       </article>
     </section>
+
+    <!-- ▼▼▼ 追加：静的な lazy 画像（below the fold 判定用） ▼▼▼ -->
+    <section class="gallery" aria-label="Tea highlights">
+      <img src="images/item01.webp"
+           alt="Sencha in a cup"
+           loading="lazy"
+           decoding="async"
+           width="640" height="400">
+      <img src="images/item02.webp"
+           alt="Teaware on a table"
+           loading="lazy"
+           decoding="async"
+           width="640" height="400">
+    </section>
+    <!-- ▲▲▲ ここまで追加 ▲▲▲ -->
+
   </main>
 
   <footer class="site-footer">
